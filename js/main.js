@@ -13,5 +13,12 @@ var app = new Vue({
         .catch(function(error){
           console.log(error)
         })
+      },
+      fillters: {
+        currencyDecimal(value) {
+          return value.toFixed(2)  
+        }      
       }
-})
+
+
+    })
